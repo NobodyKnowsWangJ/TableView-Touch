@@ -21,6 +21,10 @@ class HandWriteViewController: UIViewController {
     }
 
     @IBAction func getWriteResult(_ sender: UIButton) {
+        let image = writeView.getImageFromHandWrite()
+        if let tempImage = image {
+            showImageView.image = tempImage
+        }
     }
     
     
